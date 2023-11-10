@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap');
-
+/* ============================================ */
 :root {
     /* colors */
     --blue-color: #1e6deb;
@@ -13,14 +13,35 @@
     --font-size-medium: 16px;
     --font-size-large: 18px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--yellow-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+    border: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--darkgreen-color);
+}
+
 *{
     margin: 0;
 }
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    background-image: url("/assets/images/banner.png");
 }
 
+/* ================== nav bar ================== */
 header {
     background-color: var(--blue-color);
     color: var(--white-color);
@@ -42,12 +63,66 @@ nav li:last-child {
     margin-right: 20px;
 }
 
+nav ul li{
+    margin: 10px 30px;
+}
+
 nav a {
+    position: relative;
     text-decoration: none;
     color: var(--white-color);
     font-size: var(--font-size-large);
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--yellow-color);
+    transition: width 0.3s;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Homepage Banner section  */
+.kb-banner-img {
+    position: relative;
+    display: inline-block;
+}
+
+.kb-banner-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    text-align: left;
+    overflow: hidden;
+    display: block;
+}
+
+.overlay-text h1{
+    font-size: 130px;
+    line-height: 130px;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--darkgreen-color);
+    background: url("/assets/images/ftbl anmt.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
 }
