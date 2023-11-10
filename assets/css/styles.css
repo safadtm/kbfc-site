@@ -39,15 +39,20 @@
 
 body {
     font-family: 'Noto Sans JP', sans-serif;
+    color:var(--white-color);
 }
 
 /* ================== nav bar ================== */
 header {
     background-color: var(--blue-color);
     color: var(--white-color);
-    padding: 20px 0;
+    padding: 10px 0;
 }
+.nav-item {
+    background-color: var(--blue-color);
+    color: var(--white-color);
 
+}
 nav ul {
     list-style-type: none;
     text-align: right;
@@ -56,7 +61,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 nav li:last-child {
@@ -64,10 +69,10 @@ nav li:last-child {
 }
 
 nav ul li{
-    margin: 10px 30px;
+    margin: 5px 25px;
 }
 
-nav a {
+.nav-item a {
     position: relative;
     text-decoration: none;
     color: var(--white-color);
@@ -85,6 +90,7 @@ nav a::after{
     background-color: var(--yellow-color);
     transition: width 0.3s;
 }
+
 nav a:hover::after {
     width: 100%;
 }
@@ -125,4 +131,50 @@ nav a:hover::after {
     100%{
         background-position: 2000px 0;
     }
+}
+
+
+
+/* ============== Footer =============== */
+.social-links a {
+    position: relative;
+    text-decoration: none;
+    color: var(--white-color);
+   cursor: pointer;
+}
+
+.social-links a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--yellow-color);
+    transition: width 0.3s;
+}
+
+.social-links a:hover::after {
+    width: 100%;
+}
+
+.ftr-contact a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.ftr-contact a:hover{
+    color: var(--yellow-color);
+}
+
+.ftr-copyright a{
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+
+.ftr-copyright a:hover {
+    text-decoration: underline;
+    color: var(--yellow-color);
 }
