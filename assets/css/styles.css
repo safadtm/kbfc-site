@@ -135,9 +135,60 @@ nav a:hover::after {
         background-position: 2000px 0;
     }
 }
+/* About section */
+.about-ctnr{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 40px;
+   
+}
 
+.about-ctnr h6{ 
+    color: var(--gray-color);
+}
+.about-ctnr h2{ 
+    color: #000;
+    font-size: 55px;
+    line-height: 50px;
+}
+.about-ctnr p{ 
+    color: var(--gray-color);
+}
+.banner2-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* Owner section */
+.owner-ctnr{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 40px;
+   
+}
 
+.owner-ctnr h2{
+    color: #000;
+    font-size: 55px;
+    line-height: 50px;
+}
 
+.owner-ctnr h6{
+    margin-top: 10px;
+    color: var(--gray-color);
+}
+
+.owner-ctnr p{
+    color: #8a8a8a;
+}
 /* ============== Footer =============== */
 .social-links a {
     position: relative;
@@ -231,11 +282,8 @@ nav a:hover::after {
     font-weight: 900;
     
 }
-.card img {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.card-img-top {
+    width: 100%; /* Set the desired width */
+    height: 350px; /* Set the desired height */
+    object-fit: cover; /* This property specifies how the contents of the replaced element should be fitted to the box established by its used height and width */
 }
