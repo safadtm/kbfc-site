@@ -124,8 +124,9 @@ nav a:hover::after {
     line-height: 130px;
     color: transparent;
     -webkit-text-stroke: 2px var(--darkgreen-color);
-    background: url("/assets/images/ftbl anmt.png");
+    background: url("/public/assets/images/ftblanmt.png");
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
 }
@@ -290,13 +291,13 @@ nav a:hover::after {
 
 }
 
-.card-img-top {
+.card-img-top img{
     width: 100%;
     /* Set the desired width */
-    height: 350px;
+    /* height: 400px; */
+    height: auto;
     /* Set the desired height */
     object-fit: cover;
-    /* This property specifies how the contents of the replaced element should be fitted to the box established by its used height and width */
 }
 
 /* ================ Gallery Page =================== */
