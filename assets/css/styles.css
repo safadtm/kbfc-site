@@ -231,3 +231,11 @@ nav a:hover::after {
     font-weight: 900;
     
 }
+.card img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
