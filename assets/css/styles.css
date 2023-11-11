@@ -135,35 +135,40 @@ nav a:hover::after {
         background-position: 2000px 0;
     }
 }
+
 /* About section */
-.about-ctnr{
+.about-ctnr {
     width: 100%;
     height: auto;
     text-align: left;
     margin-top: 30px;
     padding: 20px;
     line-height: 40px;
-   
+
 }
 
-.about-ctnr h6{ 
+.about-ctnr h6 {
     color: var(--gray-color);
 }
-.about-ctnr h2{ 
+
+.about-ctnr h2 {
     color: #000;
     font-size: 55px;
     line-height: 50px;
 }
-.about-ctnr p{ 
+
+.about-ctnr p {
     color: var(--gray-color);
 }
-.banner2-img{
+
+.banner2-img {
     width: 100%;
     height: auto;
     display: block;
 }
+
 /* Owner section */
-.owner-ctnr{
+.owner-ctnr {
     width: 100%;
     height: auto;
     text-align: center;
@@ -172,23 +177,24 @@ nav a:hover::after {
     margin-top: 30px;
     padding: 20px;
     line-height: 40px;
-   
+
 }
 
-.owner-ctnr h2{
+.owner-ctnr h2 {
     color: #000;
     font-size: 55px;
     line-height: 50px;
 }
 
-.owner-ctnr h6{
+.owner-ctnr h6 {
     margin-top: 10px;
     color: var(--gray-color);
 }
 
-.owner-ctnr p{
+.owner-ctnr p {
     color: #8a8a8a;
 }
+
 /* ============== Footer =============== */
 .social-links a {
     position: relative;
@@ -254,11 +260,11 @@ nav a:hover::after {
     font-size: 75px;
     line-height: 100px;
     font-weight: 900;
-    
+
 }
 
 .players-cntr {
-    padding:50px 10px;
+    padding: 50px 10px;
     width: 100%;
     height: auto;
     background-color: var(--white-color);
@@ -267,8 +273,8 @@ nav a:hover::after {
     align-items: center;
 }
 
-.coaches-cntr{
-    padding:50px 10px;
+.coaches-cntr {
+    padding: 50px 10px;
     width: 100%;
     height: auto;
     background-color: var(--gray-color);
@@ -276,14 +282,34 @@ nav a:hover::after {
     text-align: center;
     align-items: center;
 }
+
 .section-title h2 {
     font-size: 50px;
     line-height: 75px;
     font-weight: 900;
-    
+
 }
+
 .card-img-top {
-    width: 100%; /* Set the desired width */
-    height: 350px; /* Set the desired height */
-    object-fit: cover; /* This property specifies how the contents of the replaced element should be fitted to the box established by its used height and width */
+    width: 100%;
+    /* Set the desired width */
+    height: 350px;
+    /* Set the desired height */
+    object-fit: cover;
+    /* This property specifies how the contents of the replaced element should be fitted to the box established by its used height and width */
+}
+
+/* ================ Gallery Page =================== */
+.gallery-ctnr {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 30px;
+    padding: 20px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 930px;
+    object-fit: cover;
+    
 }
