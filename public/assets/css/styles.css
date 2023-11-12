@@ -163,7 +163,6 @@ nav a:hover::after {
 @media (min-width: 1200px) {
     .overlay-text {
         top: 50%;
-        /* Adjust this value as needed for extra-large screens */
     }
     .overlay-text h1 {
         font-size: 50px;
@@ -174,7 +173,8 @@ nav a:hover::after {
 .overlay-text h1 {
     color: transparent;
     -webkit-text-stroke: 2px var(--darkgreen-color);
-    background: url("/public/assets/images/ftblanmt.png");
+    /* background: url("https://firebasestorage.googleapis.com/v0/b/safad-tm-portfolio.appspot.com/o/KBFC%2Fftblanmt.png?alt=media&token=38fa4f02-542e-4d9c-9b6f-a47ac12668e3"); */
+    background-image: url("../images/ftblanmt.png");
     -webkit-background-clip: text;
     background-clip: text;
     background-position: 0 0;

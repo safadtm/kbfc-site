@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site":"keralablasters",
     "public": "public",
     "ignore": [
       "firebase.json",
