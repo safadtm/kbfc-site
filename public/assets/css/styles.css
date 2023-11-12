@@ -112,16 +112,66 @@ nav a:hover::after {
 
 .overlay-text {
     position: absolute;
-    top: 30%;
     left: 5%;
     text-align: left;
     overflow: hidden;
     display: block;
 }
 
+/*top position for different screen sizes */
+@media (max-width: 575px) {
+    .overlay-text {
+        top: 20%;
+    }
+
+    .overlay-text h1 {
+        font-size: 50px;
+        line-height: 4rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .overlay-text {
+        top: 20%;
+    }
+    .overlay-text h1 {
+        font-size: 80px;
+        line-height: 6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .overlay-text {
+        top: 30%;
+    }
+    .overlay-text h1 {
+        font-size: 100px;
+        line-height: 6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .overlay-text {
+        top: 40%;
+    }
+    .overlay-text h1 {
+        font-size: 150px;
+        line-height: 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .overlay-text {
+        top: 50%;
+        /* Adjust this value as needed for extra-large screens */
+    }
+    .overlay-text h1 {
+        font-size: 50px;
+        line-height: 4rem;
+    }
+}
+
 .overlay-text h1 {
-    font-size: 130px;
-    line-height: 130px;
     color: transparent;
     -webkit-text-stroke: 2px var(--darkgreen-color);
     background: url("/public/assets/images/ftblanmt.png");
@@ -250,11 +300,45 @@ nav a:hover::after {
 
 .overlay-text2 {
     position: absolute;
-    top: 60%;
     left: 0;
     text-align: left;
     overflow: hidden;
     display: block;
+}
+
+/*top position for different screen sizes */
+@media (max-width: 575px) {
+    .overlay-text2 {
+        top: 20%;
+        /* Adjust this value as needed for smaller screens */
+    }
+}
+
+@media (min-width: 576px) {
+    .overlay-text2 {
+        top: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .overlay-text2 {
+        top: 30%;
+        /* Adjust this value as needed for medium-sized screens */
+    }
+}
+
+@media (min-width: 992px) {
+    .overlay-text2 {
+        top: 40%;
+        /* Default value for larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .overlay-text2 {
+        top: 50%;
+        /* Adjust this value as needed for extra-large screens */
+    }
 }
 
 .overlay-text2 h2 {
@@ -291,7 +375,7 @@ nav a:hover::after {
 
 }
 
-.card-img-top img{
+.card-img-top img {
     width: 100%;
     /* Set the desired width */
     /* height: 400px; */
@@ -308,9 +392,10 @@ nav a:hover::after {
     margin-top: 30px;
     padding: 20px;
 }
-.carousel-item img{
+
+.carousel-item img {
     width: 100%;
     height: 930px;
     object-fit: cover;
-    
+
 }
